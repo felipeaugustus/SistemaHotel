@@ -1,0 +1,21 @@
+{% extends "registration/base.html" %}
+
+{% block title %}Entrar{% endblock %}
+
+{% block form %}
+  {% if form.errors %}
+    <p class="error">Usuário ou senha inválidos.</p>
+  {% endif %}
+
+  <label>
+    Usuário
+    <input name="username" autocomplete="username" required autofocus>
+  </label>
+  <label>
+    Senha
+    <input name="password" type="password" autocomplete="current-password" required>
+  </label>
+
+  <button type="submit">Entrar</button>
+  <a href="{% url 'register' %}?next={{ next|urlencode }}">Criar conta</a>
+{% endblock %}
