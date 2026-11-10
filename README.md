@@ -2,7 +2,7 @@
 
 Gestão de hóspedes de um hotel: cadastro, reservas, check-in e checkout com cálculo da conta.
 
-Backend em Python com Django. BD PostgreSQL. Frontend em React com TypeScript. Subindo no Docker, cada um container para cada módulo (back, front e banco)
+Backend em Python com Django. BD PostgreSQL. Frontend em React com TypeScript. Subindo no Docker, um container para cada módulo (back, front e banco)
 
 ## Como rodar
 
